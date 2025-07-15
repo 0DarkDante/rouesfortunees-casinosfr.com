@@ -1,5 +1,5 @@
 <!DOCTYPE html><html prefix="og: http://ogp.me/ns#" lang="en-US" dir="ltr"><head><link rel="stylesheet" href="css/default.css" id="mw-system-default-css" type="text/css">
-<link rel="shortcut icon" href="images/024bc48775db1f6fbe894c79dbf0501b.jpg">
+<link rel="shortcut icon" href="https://rouesfortunees-casinosfr.com/images/free-icon-coin-7412725.png">
 
 <meta name="generator" content="Microweber">
 
@@ -63,91 +63,146 @@
 
 <body><!-- Age Verification Modal -->
 <div id="ageVerificationModal" style="display: none;">
-    <div id="ageVerificationContent">
-        <h1 id="ageVerificationHeader">VEUILLEZ CONFIRMER VOTRE ÂGE</h1>
-        <div id="ageVerificationText">
-            L’accès à ce site est strictement réservé aux personnes majeures, âgées de 18 ans ou plus.
-            Merci de confirmer que vous remplissez cette condition légale.
-        </div>
-        <div class="buttonContainer">
-            <button class="ageVerificationButton btnYes" onclick="confirmAge()">Je confirme</button>
-            <button class="ageVerificationButton btnNo" onclick="denyAge()">Je ne confirme pas</button>
-        </div>
-        <div id="ageVerificationNotification" style="display: none;">
-            L’accès vous est refusé car vous n’avez pas l’âge légal requis.
-        </div>
+  <div id="ageVerificationContent">
+    <h1 id="ageVerificationHeader">VEUILLEZ CONFIRMER VOTRE ÂGE</h1>
+    <div id="ageVerificationText">
+      L’accès à ce site est strictement réservé aux personnes majeures, âgées de 18 ans ou plus.
+      Merci de confirmer que vous remplissez cette condition légale.
     </div>
+    <div class="buttonContainer">
+      <button class="ageVerificationButton btnYes" onclick="confirmAge()">Je confirme</button>
+      <button class="ageVerificationButton btnNo" onclick="denyAge()">Je ne confirme pas</button>
+    </div>
+    <div id="ageVerificationNotification" style="display: none;">
+      L’accès vous est refusé car vous n’avez pas l’âge légal requis.
+    </div>
+  </div>
 </div>
+
 
 
 <style>
     /* Modal Styles */
-    #ageVerificationModal {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        z-index: 1000;
-        opacity: 1;
-    }
-    #ageVerificationContent {
-        background: white;
-        padding: 20px;
-        text-align: center;
-        width: 90%;
-        max-width: 400px;
-        border-radius: 10px;
-    }
-    #ageVerificationHeader {
-        font-size: 40px;
-        font-weight: bold;
-        color: #F44336;
-    }
-    #ageVerificationText {
-        font-size: 16px;
-        color: #666;
-    }
-    .buttonContainer {
-        display: flex;
-        gap: 10px;
-    }
-    .ageVerificationButton {
-        padding: 10px 0;
-        font-size: 16px;
-        font-weight: bold;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        text-transform: uppercase;
-        width: 50%;
-        color: white;
-    }
-    .btnYes {
-        background-color: #4CAF50; /* Green */
-    }
-    .btnYes:hover {
-        background-color: #357a38; /* Darker Green */
-    }
-    .btnNo {
-        background-color: #f44336; /* Red */
-    }
-    .btnNo:hover {
-        background-color: #ab2f26; /* Darker Red */
-    }
-    #ageVerificationNotification {
-        display: none; /* Initially hidden */
-        color: red;
-    }
+    /* Modal Styles */
+#ageVerificationModal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 1100;
+  opacity: 1;
+  animation: fadeInBg 0.5s ease forwards;
+  backdrop-filter: blur(6px);
+}
 
-    /* Freeze Background */
-    .no-scroll {
-        overflow: hidden; /* Prevent scrolling */
-    }
+@keyframes fadeInBg {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#ageVerificationContent {
+  background: #121212;
+  padding: 30px 25px;
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: slideUp 0.5s ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#ageVerificationHeader {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #00BFFF;
+  margin-bottom: 20px;
+  text-shadow: 0 0 12px rgba(0, 191, 255, 0.6);
+  letter-spacing: 1.2px;
+}
+
+#ageVerificationText {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 16px;
+}
+
+.ageVerificationButton {
+  padding: 14px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 50%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  user-select: none;
+}
+
+/* Позитивна кнопка — синя */
+.btnYes {
+  background: linear-gradient(135deg, #007BFF 0%, #00BFFF 100%);
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(0, 191, 255, 0.6);
+}
+.btnYes:hover,
+.btnYes:focus {
+  background: linear-gradient(135deg, #00BFFF 0%, #007BFF 100%);
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.8);
+  outline: none;
+}
+
+/* Відмова — темно-сіра з червоним підтекстом */
+.btnNo {
+  background: linear-gradient(135deg, #333 0%, #111 100%);
+  color: #ff4c4c;
+  border: 1px solid #ff4c4c;
+  box-shadow: 0 0 8px rgba(255, 76, 76, 0.4);
+}
+.btnNo:hover,
+.btnNo:focus {
+  background: linear-gradient(135deg, #111 0%, #000 100%);
+  box-shadow: 0 0 14px rgba(255, 76, 76, 0.6);
+  outline: none;
+}
+
+#ageVerificationNotification {
+  margin-top: 16px;
+  color: #ff4c4c;
+  font-weight: 700;
+  font-size: 1rem;
+  display: none;
+  text-shadow: 0 0 5px rgba(255, 76, 76, 0.8);
+  user-select: none;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
+
 </style>
 
 <script>
@@ -258,7 +313,7 @@
 
 
 <!-- <nav class="navigation" style="background-color: #f5b811;"> -->
-<nav class="navigation" style="background-color: #000000;">
+<nav class="navigation" style="background: linear-gradient(to top, #00008B 0%, #000022 50%, black 100%);">
     <div class="container-fluid">
         <div class="navbar-header">
 		
@@ -268,7 +323,7 @@
 <a href="./index.html">
                      <span class="mw-ui-col-x" style="width: 130px">
 
-            <img src="images/024bc48775db1f6fbe894c79dbf0501b.jpg" alt="" style="max-width: 100%; width: 130px;" class="logo ">
+            <img src="images/free-icon-coin-7412725.png" alt="" style="max-width: 100%; width: 80px;" class="logo ">
                 </span>
                 </a>
 </div>
@@ -356,8 +411,27 @@
 
 </script>
 
-<ul role="menu" id="" class="list menu_1  menu-root menu-item-id-36 menu-item-parent-1"><li role="menuitem" class="shopmag-header-li active   depth-0" data-item-id="36"><a itemprop="url" data-item-id="36" style="background-color: #FFFFFF; border-radius: 5px;" class="menu_element_link active  menu-root menu-item-id-36 menu-item-parent-1 depth-0 shopmag-header-a" href="./head1.html"><font style="font-family: Arial; font-weight: 700; color: #000000; font-size: 16px;"><span>Nouveauté</span></font></a></li><ul role="menu" class="dropdown-menu menu_47  first-child child-0 menu-item-id-25 menu-item-parent-47"><li role="menuitem" class="shopmag-header-li    depth-1" data-item-id="25"><a itemprop="url" data-item-id="25" style="background-color: #FFFFFF; border-radius: 5px;" class="menu_element_link   first-child child-0 menu-item-id-25 menu-item-parent-47 depth-1 shopmag-header-a" href="https://parirapide.com/vbet"><font style="font-family: Arial; font-weight: 700; color: #000000; font-size: 16px;"><span>Vbet</span></font></a></li><li role="menuitem" class="shopmag-header-li    depth-1" data-item-id="48"><a itemprop="url" data-item-id="48" style="background-color: #FFFFFF; border-radius: 5px;" class="menu_element_link   first-child child-0 menu-item-id-48 menu-item-parent-47 depth-1 shopmag-header-a" href="https://parirapide.com/pmu"><font style="font-family: Arial; font-weight: 700; color: #000000; font-size: 16px;"><span>PMU</span></font></a></li></ul></li><li role="menuitem" class="shopmag-header-li    depth-0" data-item-id="50"><a itemprop="url" data-item-id="50" style="background-color: #FFFFFF; border-radius: 5px;" class="menu_element_link   child-1 menu-item-id-50 menu-item-parent-1 depth-0 shopmag-header-a" href="head2.html"><font style="font-family: Arial; font-weight: 700; color: #000000; font-size: 16px;"><span>Plateformes vérifiées</span></font></a></li><li role="menuitem" class="shopmag-header-li    depth-0" data-item-id="26"><a itemprop="url" data-item-id="26" style="background-color: #FFFFFF; border-radius: 5px;" class="menu_element_link   child-1 menu-item-id-26 menu-item-parent-1 depth-0 shopmag-header-a" href="./head3.html"><font style="font-family: Arial; font-weight: 700; color: #000000; font-size: 16px;"><span>Favoris des joueurs</span></font></a></li>
-<li role="menuitem" class="shopmag-header-li    depth-0" data-item-id="26"><a itemprop="url" data-item-id="26" style="background-color: #FFFFFF; border-radius: 5px;" class="menu_element_link   child-1 menu-item-id-26 menu-item-parent-1 depth-0 shopmag-header-a" href="./head4.html"><font style="font-family: Arial; font-weight: 700; color: #000000; font-size: 16px;"><span>Paiements rapides</span></font></a></li>
+<ul role="menu" class="list menu_1 menu-root menu-item-id-36 menu-item-parent-1">
+  <li role="menuitem" class="shopmag-header-li active depth-0" data-item-id="36">
+    <a href="./head1.html" class="menu_element_link active" role="menuitem" aria-haspopup="true" aria-expanded="false">
+      Innovation
+    </a>
+  </li>
+  <li role="menuitem" class="shopmag-header-li depth-0" data-item-id="50">
+    <a href="head2.html" class="menu_element_link" role="menuitem">
+      Sites certifiés
+    </a>
+  </li>
+  <li role="menuitem" class="shopmag-header-li depth-0" data-item-id="26">
+    <a href="./head3.html" class="menu_element_link" role="menuitem">
+      Sélection des joueurs
+    </a>
+  </li>
+  <li role="menuitem" class="shopmag-header-li depth-0" data-item-id="26">
+    <a href="./head4.html" class="menu_element_link" role="menuitem">
+      Paiements express
+    </a>
+  </li>
 </ul>
 </div>
 					</div>
@@ -458,12 +532,15 @@
 
 		/* Centered Text Styles */
 		.centered-text-unique {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
 			text-align: center; /* Center the text */
 			padding: 20px; /* Add padding */
 			margin-top: 20px; /* Space from the above divs */
 			border: 1px solid #333333; /* Optional border */
 			border-radius: 5px; /* Optional rounded corners */
-			background-color: #222222; /* White background for centered text */
+			background-color: #1d353f; /* White background for centered text */
 		}
 
 		/* Footer Menu Styles */
@@ -520,28 +597,15 @@
 
 <div class="container-unique">
 <div align="center">
-	<h2><font style="color: #FFFFFF; font-family: Arial; font-size: 18px;"><b>Jeux interdits aux mineurs. Réservé aux 18 ans et plus.</b></font></h2>
+	<h2><font style="color: #FFFFFF; font-family: Arial; font-size: 18px;"><b>Pour votre sécurité, l’accès est réservé aux personnes âgées de 18 ans et plus.</b></font></h2>
 	<hr>
-	<p><font style="color: #b7b7b7; font-family: Arial; font-size:14px;">Les jeux d’argent et les paris en ligne sont strictement réservés aux personnes majeures (18 ans et plus). En accédant à ce site, vous déclarez avoir l’âge légal requis et respecter la législation relative aux jeux en vigueur dans votre pays ou région.
-Il vous appartient de vérifier que la participation à des jeux de hasard en ligne est autorisée dans votre juridiction. Casinosetoiles-FR promeut un jeu responsable et encourage ses utilisateurs à jouer avec discernement.
-Si vous avez moins de 18 ans ou si la législation locale interdit les jeux d’argent, vous devez quitter ce site immédiatement.
+	<p><font style="color: #b7b7b7; font-family: Arial; font-size:14px;">L’accès aux jeux d’argent et de hasard en ligne est strictement réservé aux personnes majeures (18 ans et plus). En utilisant ce site, vous confirmez avoir l’âge légal requis et respecter la réglementation applicable dans votre pays ou région. Il est de votre responsabilité de vous assurer que la participation à ces jeux est autorisée dans votre juridiction.
+
+Casinosetoiles-FR encourage une pratique responsable du jeu et invite chaque utilisateur à faire preuve de modération. Si vous avez moins de 18 ans ou si la législation locale interdit les jeux d’argent, veuillez quitter ce site immédiatement.
 </font>
 </p>
 </div>
 
-<br>
-
-<div align="left">
-	<h2><font style="color: #FFFFFF; font-family: Arial; font-size: 18px;"><b>Échecs répétés pour réduire ou arrêter les jeux.</b></font></h2>
-	<hr>
-	<p><font style="color: #b7b7b7; font-family: Arial; font-size:14px;">
-        Le site Casinosetoiles-FR rappelle que l’exploitation de ses contenus à des fins illégales est strictement interdite. Il vous incombe de respecter l’âge légal en vigueur dans votre juridiction ainsi que les conditions propres à chaque opérateur de jeux.
-	<br>
-	N’oubliez jamais que le jeu doit rester un loisir agréable, maîtrisé et sans excès. Prenez régulièrement des pauses, définissez vos propres limites et ne misez jamais de l’argent que vous ne pouvez pas vous permettre de perdre.
-</font></p></div>
-</div>
-
-<br>
 
 <div class="centered-text-unique">
 <!-- <h3>�</h3> -->
@@ -605,15 +669,14 @@ color: #333333;
 </style>
 
 <div class="sponsor-gallery">
-
-	<a href="#" target="_blank">
-		<img src="images/18-plus-new2-white.png" alt="18+">
+    <a href="https://www.gambleaware.org/" target="_blank">
+		<img src="images/logo-gambleaware.png" width="300" alt="GambleAware">
 	</a>
 	<a href="https://www.gamcare.org.uk/" target="_blank">
 		<img src="images/gamcare-logo.png" alt="GamCare">
 	</a>
-	<a href="https://www.gambleaware.org/" target="_blank">
-		<img src="images/logo-gambleaware.png" width="300" alt="GambleAware">
+    <a href="#" target="_blank">
+		<img src="images/jouons-responsable.png" alt="Jouons Responsable">
 	</a>
 	<a href="https://anj.fr" target="_blank">
 		<img src="images/anj.png" alt="ANJ">
@@ -621,11 +684,11 @@ color: #333333;
 	<a href="https://www.joueurs-info-service.fr" target="_blank">
 		<img src="images/joueurs-info-service.png" alt="Joueurs Info Service">
 	</a>
+    <a href="#" target="_blank">
+		<img src="images/18-plus-new2-white.png" alt="18+">
+	</a>
 	<a href="https://www.sosjoueurs.org" target="_blank">
 		<img src="images/sosjoueurs.png" alt="SOS Joueurs">
-	</a>
-	<a href="#" target="_blank">
-		<img src="images/jouons-responsable.png" alt="Jouons Responsable">
 	</a>
 	
 </div>
@@ -644,7 +707,7 @@ color: #333333;
 	<li><a href="./privacy-policy.html">Politique de confidentialité</a></li>
 	<li><a href="./cookies.html">Politique relative aux cookies</a></li>
 	<li><a href="./responsible-gambling.html">Jeu Responsable</a></li>
-	<li><a href="#">Nous contacter</a></li>
+	<li><a href="#" id="contactLink">Nous contacter</a></li>
 </ul>
 </div>
 
@@ -792,7 +855,7 @@ mw.lib.require('slick');
 
 
 
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","url":"https://parirapide.com/","name":"Accueil","headline":"Accueil","author":"admin","image":false,"description":"Trouvez les meilleures plateformes de paris hippiques en France. Comparez des sites fiables avec des cotes compétitives, du streaming en direct et des bonus attractifs.","brand":{"@type":"Organization","name":"parirapide.com"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","url":"https://Casinosetoiles-FR.com/","name":"Accueil","headline":"Accueil","author":"admin","image":false,"description":"Trouvez les meilleures plateformes de paris hippiques en France. Comparez des sites fiables avec des cotes compétitives, du streaming en direct et des bonus attractifs.","brand":{"@type":"Organization","name":"Casinosetoiles-FR.com"}}]}</script>
 <script async="">$(document).ready(function () {
     setTimeout(function () {
         var track = {referrer: document.referrer}
@@ -819,108 +882,102 @@ mw.lib.require('slick');
 </script>
 
 <!-- Початок банера cookie -->
-<div id="cookieConsent" class="cookie-consent">
-  <div class="cookie-message">
-    <p>
-      Ce site utilise des cookies pour améliorer votre expérience. En continuant, vous acceptez notre 
-      <a href="./cookies.html" target="_blank" rel="noopener noreferrer">politique de confidentialité</a>.
-    </p>
-    <button id="acceptCookiesBtn" class="cookie-btn">Accepter</button>
+<div id="cookieConsent" class="cookie-toast">
+  <div class="cookie-toast__body">
+    <span>
+      En utilisant ce site, vous acceptez l’utilisation de cookies. 
+      <a href="./cookies.html" target="_blank" rel="noopener noreferrer">En savoir plus</a>.
+    </span>
+    <button id="acceptCookiesBtn" class="cookie-toast__btn">OK</button>
   </div>
 </div>
 
-<style>
-  .cookie-consent {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%) translateY(100%);
-    background: #121212;
-    color: #f5f5f5;
-    max-width: 480px;
-    width: 90%;
-    padding: 16px 24px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(255, 143, 0, 0.7);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    opacity: 0;
-    pointer-events: none;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    z-index: 1200;
-  }
 
-  .cookie-consent.show {
-    transform: translateX(-50%) translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
+<style> 
+ .cookie-toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background-color: #222;
+  color: #f0f0f0;
+  padding: 14px 20px;
+  width: calc(100% - 40px);
+  max-width: 420px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  font-family: system-ui, sans-serif;
+  font-size: 0.9rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 9999;
+}
 
-  .cookie-message p {
-    margin: 0;
-    line-height: 1.4;
-    flex: 1;
-    color: #e0e0e0;
-  }
+.cookie-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
 
-  .cookie-message a {
-    color: #FF8F00;
-    text-decoration: underline;
-    transition: color 0.3s ease;
-  }
+.cookie-toast__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  text-align: left;
+}
 
-  .cookie-message a:hover,
-  .cookie-message a:focus {
-    color: #FFC107;
-    outline: none;
-  }
+.cookie-toast__body a {
+  color: #196a8e;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
 
-  .cookie-btn {
-    background: linear-gradient(135deg, #FF8F00 0%, #FFC107 100%);
-    border: none;
-    padding: 10px 22px;
-    font-weight: 700;
-    color: #222;
-    border-radius: 12px;
-    cursor: pointer;
-    box-shadow: 0 0 12px #FF8F00;
-    text-transform: uppercase;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-    user-select: none;
-    flex-shrink: 0;
-    display: block;
-    margin: 10px auto;
-  }
+.cookie-toast__body a:hover,
+.cookie-toast__body a:focus {
+  color: #196a8e;
+}
 
-  .cookie-btn:hover,
-  .cookie-btn:focus {
-    background: linear-gradient(135deg, #FFC107 0%, #FF8F00 100%);
-    box-shadow: 0 0 20px #FFC107;
-    outline: none;
-  }
+.cookie-toast__btn {
+  background-color: #196a8e;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 40px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+  display: block;
+    margin: 0 auto;
+}
+
+.cookie-toast__btn:hover {
+  background-color: #ffbe33;
+}
+
 </style>
-
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const cookieConsent = document.getElementById('cookieConsent');
-    const acceptBtn = document.getElementById('acceptCookiesBtn');
-    const consentKey = 'cookieConsentGiven';
+ document.addEventListener('DOMContentLoaded', () => {
+  const toast = document.getElementById('cookieConsent');
+  const btn = document.getElementById('acceptCookiesBtn');
+  const storageKey = 'cookieConsent';
 
-    if (!localStorage.getItem(consentKey)) {
-      setTimeout(() => {
-        cookieConsent.classList.add('show');
-      }, 1000);
-    }
+  if (!localStorage.getItem(storageKey)) {
+    setTimeout(() => {
+      toast.classList.add('show');
+    }, 800);
+  }
 
-    acceptBtn.addEventListener('click', () => {
-      localStorage.setItem(consentKey, 'true');
-      cookieConsent.classList.remove('show');
-    });
+  btn.addEventListener('click', () => {
+    localStorage.setItem(storageKey, 'true');
+    toast.classList.remove('show');
   });
+});
+
 </script>
 <!-- Кінець банера cookie -->
 
@@ -947,122 +1004,118 @@ mw.lib.require('slick');
 </div>
 
 <style>
-  /* Фон і оверлей */
-  .modal-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.85);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1300;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1300;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  /* Вікно форми */
-  .modal-content {
-    background: #121212;
-    color: #f5f5f5;
-    padding: 25px 30px;
-    border-radius: 16px;
-    width: 90%;
-    max-width: 420px;
-    box-shadow: 0 0 25px rgba(255, 143, 0, 0.8);
-    animation: fadeInUp 0.4s ease forwards;
-  }
+.modal-content {
+  background: #121212;
+  color: #f0f0f0;
+  padding: 30px 32px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 440px;
+  box-shadow: 0 0 24px rgba(0, 123, 255, 0.5);
+  animation: fadeSlideIn 0.4s ease forwards;
+}
 
-  @keyframes fadeInUp {
-    from {opacity: 0; transform: translateY(40px);}
-    to {opacity: 1; transform: translateY(0);}
-  }
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-  .modal-content h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: #FF8F00;
-    text-align: center;
-    text-shadow: 0 0 12px rgba(255,143,0,0.7);
-  }
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #00BFFF;
+  font-size: 1.8rem;
+  text-align: center;
+  text-shadow: 0 0 8px rgba(0, 191, 255, 0.5);
+}
 
-  label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: 600;
-    color: #FFC107;
-  }
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #87CEFA;
+}
 
-  input[type="email"],
-  input[type="text"],
-  textarea {
-    width: 100%;
-    padding: 10px 14px;
-    margin-bottom: 18px;
-    border: none;
-    border-radius: 10px;
-    background: #1e1e1e;
-    color: #eee;
-    font-size: 1rem;
-    box-sizing: border-box;
-    resize: vertical;
-  }
+input[type="email"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  font-size: 1rem;
+  box-sizing: border-box;
+  resize: vertical;
+  transition: background 0.3s ease, border 0.3s ease;
+}
 
-  input[type="email"]::placeholder,
-  input[type="text"]::placeholder,
-  textarea::placeholder {
-    color: #bbb;
-  }
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+}
 
-  input[type="email"]:focus,
-  input[type="text"]:focus,
-  textarea:focus {
-    outline: 2px solid #FF8F00;
-    background: #2a2a2a;
-  }
+input:focus,
+textarea:focus {
+  background: #1f1f1f;
+  border: 1px solid #00BFFF;
+  outline: none;
+}
 
-  .button-group {
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-  }
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
 
-  .btn-submit,
-  .btn-cancel {
-    flex: 1;
-    padding: 12px 0;
-    font-weight: 700;
-    border-radius: 12px;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: 1rem;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    user-select: none;
-  }
+.btn-submit,
+.btn-cancel {
+  flex: 1;
+  padding: 12px 0;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  user-select: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
-  .btn-submit {
-    background: linear-gradient(135deg, #FF8F00 0%, #FFC107 100%);
-    color: #222;
-    box-shadow: 0 0 15px #FF8F00;
-  }
+.btn-submit {
+  background: linear-gradient(135deg, #007BFF, #00BFFF);
+  color: #ffffff;
+  box-shadow: 0 0 14px rgba(0, 191, 255, 0.6);
+}
 
-  .btn-submit:hover,
-  .btn-submit:focus {
-    background: linear-gradient(135deg, #FFC107 0%, #FF8F00 100%);
-    box-shadow: 0 0 25px #FFC107;
-    outline: none;
-  }
+.btn-submit:hover {
+  background: linear-gradient(135deg, #00BFFF, #007BFF);
+  transform: scale(1.03);
+}
 
-  .btn-cancel {
-    background: #333;
-    color: #eee;
-    box-shadow: 0 0 8px rgba(0,0,0,0.7);
-  }
+.btn-cancel {
+  background: #2c2c2c;
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px #555;
+}
 
-  .btn-cancel:hover,
-  .btn-cancel:focus {
-    background: #555;
-    outline: none;
-  }
+.btn-cancel:hover {
+  background: #444;
+}
+
 </style>
 
 <script>
