@@ -9894,7 +9894,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   display: block;
   text-decoration: none;
   position: relative;
-  color: #333;
+  color: #fff;
   padding: .7rem .5rem; }
   .navigation .list > li > a:hover {
     border-bottom: 1px black; }
@@ -9903,13 +9903,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   content: '';
   transition: all, 0.3s;
   transform: rotate(0);
-  top: calc(50% - 1.5px); }
-
-.navigation .list li > a:after {
-  content: '';
-  transition: all, 0.3s;
-  transform: rotate(0);
-  top: calc(50% - 1.5px); }
+  top: calc(85% - 1.5px); }
 
 .dropdown-has-child:after {
   content: "";
@@ -10689,7 +10683,7 @@ html[dir="rtl"] body .dropdown-menu {
     font-size: 14px; }
 
   .navigation .secondary-menu .list > li:hover > a {
-    color: #2c2c2c;
+    color: #fff;
     transition: all, 0.3s; }
 
   .navigation .secondary-menu .list > li > ul li:hover > a {
@@ -16155,7 +16149,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   display: block;
   text-decoration: none;
   position: relative;
-  color: #333;
+  color: #fff;
   padding: .7rem .5rem; }
   .navigation .list > li > a:hover {
     border-bottom: 1px black; }
@@ -16164,13 +16158,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   content: '';
   transition: all, 0.3s;
   transform: rotate(0);
-  top: calc(50% - 1.5px); }
-
-.navigation .list li > a:after {
-  content: '';
-  transition: all, 0.3s;
-  transform: rotate(0);
-  top: calc(50% - 1.5px); }
+  top: calc(85% - 1.5px); }
 
 .dropdown-has-child:after {
   content: "";
@@ -16189,7 +16177,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
 .navigation .list > li > a:hover,
 .navigation .list > li.active > a,
 .navigation .list > li.active-parent > a {
-  color: #2c2c2c;
+  color: #fff;
   transition: all, 0.3s; }
 
 .dropdown-menu {
@@ -16950,7 +16938,7 @@ html[dir="rtl"] body .dropdown-menu {
     font-size: 14px; }
 
   .navigation .secondary-menu .list > li:hover > a {
-    color: #2c2c2c;
+    color: #fff;
     transition: all, 0.3s; }
 
   .navigation .secondary-menu .list > li > ul li:hover > a {
@@ -25307,3 +25295,4 @@ table {
   font-size: 30px; }
 
 /*# sourceMappingURL=main.css.map */
+

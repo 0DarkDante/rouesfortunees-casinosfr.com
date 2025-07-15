@@ -9189,3 +9189,56 @@ html[dir="rtl"] .mw-block-edit-edit-slide {
     font-size: 1.2rem;
   }
 }
+
+/* Загальні стилі для ul меню */
+.list.menu-root {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.shopmag-header-li {
+  position: relative;
+}
+
+.menu_element_link {
+  position: relative;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 0;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.menu_element_link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #007BFF;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 2px;
+  transform: none !important;
+  /* Важный момент */
+}
+
+/* При наведении просто плавно появляется */
+.menu_element_link:hover::after {
+  opacity: 1;
+  transform: none !important;
+  /* на всякий случай */
+}
+
+.menu_element_link:hover {
+  color: #66B2FF;
+}
+
+.list.menu-root .shopmag-header-li .menu_element_link:hover {
+  color: #005992 !important;
+}
