@@ -9140,53 +9140,89 @@ html[dir="rtl"] .mw-block-edit-edit-slide {
     transform: translateY(0);
   }
 }
-
 .page-container {
   width: 100vw;
-  /* вся ширина вікна */
-  padding: 100px 20px;
-  background-color: #000;
+  padding: 100px 24px;
+  background-color: #0a0a0a;
   font-family: 'Segoe UI', 'Roboto', sans-serif;
-  color: #f5f5f5;
-  line-height: 1.6;
-  animation: fadeInUp 1s ease-out;
+  color: #f0f0f0;
+  line-height: 1.7;
   box-sizing: border-box;
+  animation: fadeInContainer 0.8s ease-out both;
 }
 
 .page-container h1 {
-  font-size: 2.5rem;
-  color: #FF8F00;
+  font-size: 2.6rem;
+  color: #00BFFF;
   text-align: center;
   margin-bottom: 2rem;
-  text-shadow: 0 0 10px rgba(255, 143, 0, 0.3);
-  animation: fadeInUp 1s ease-out 0.2s both;
+  text-shadow: 0 0 14px rgba(0, 191, 255, 0.4);
+  letter-spacing: 1px;
+  animation: fadeSlideDown 0.6s ease-out 0.1s both;
 }
 
 .page-container p {
-  font-size: 1.1rem;
-  color: #e0e0e0;
-  margin-bottom: 1.5rem;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  animation: fadeInUp 1s ease-out 0.4s both;
+  font-size: 1.15rem;
+  color: #dcdcdc;
+  margin: 0 auto 1.6rem;
+  max-width: 880px;
+  text-align: justify;
+  animation: fadeSlideUp 0.6s ease-out 0.2s both;
 }
 
 .page-container p:last-child {
   margin-bottom: 0;
 }
 
+/* Анімації */
+@keyframes fadeInContainer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Адаптив */
 @media (min-width: 768px) {
   .page-container {
-    padding: 120px 60px;
+    padding: 120px 64px;
   }
 
   .page-container h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 
   .page-container p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 }
 
